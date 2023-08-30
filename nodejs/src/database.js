@@ -3,7 +3,7 @@ const database = require("mysql");
 class Database {
   constructor(config) {
     this.db = database.createConnection(config);
-    this.init;
+    this.init();
   }
 
   init() {
