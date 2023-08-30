@@ -14,3 +14,11 @@ git clone https://github.com/devalefe/nginx-nodejs-fullcycle.git
 ```bash
 docker compose up -d
 ```
+
+### End Points:
+
+Listar Pessoas <br>
+[GET] `http://localhost:8080`
+
+Cadastrar Pessoa <br>
+[GET] `http://localhost:8080/?name=Fulano`
