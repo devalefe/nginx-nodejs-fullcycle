@@ -19,6 +19,8 @@ services:
     build:
       context: ./nodejs
     container_name: nodejs
+    volumes:
+      - ./nodejs:/home/app
     environment:
       DB_HOST: database
       DB_PORT: 3306
