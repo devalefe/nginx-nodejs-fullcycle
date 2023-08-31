@@ -9,6 +9,4 @@ RUN curl -o /usr/bin/wait-for https://raw.githubusercontent.com/eficode/wait-for
 
 COPY . .
 
-RUN npm install
-
-ENTRYPOINT ["wait-for", "database:3306", "-t 40", "--", "npm", "start"]
+ENTRYPOINT [ "wait-for", "database:3306", "-t 40", "--", "./entrypoint.sh" ]
